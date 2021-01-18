@@ -1,0 +1,50 @@
+{
+    "name":"FOS - CKEditor4"
+   ,"version":"20.2.0"
+   ,"description":"Rich Text Editor based on the classic widget CKEditor4.\r\n\u003Ch4\u003EFree Plug-in under MIT License\u003C\/h4\u003E\r\n\u003Cp\u003E\r\nAll FOS plug-ins are released under MIT License, which essentially means it is free for everyone to use, no matter if commercial or private use. \r\n\u003C\/p\u003E\r\n\u003Ch4\u003EOverview\u003C\/h4\u003E\r\n\u003Cp\u003EThis plug-in offers the classic Rich Text Editor functionality we\u0027re all used to in APEX with minor differences such as a newer refreshed theme.\u003C\/p\u003E\r\n\u003Cp\u003EStarting in APEX 20.2, the APEX RTE has been upgraded to CKEditor5, which is a complete rewrite of the widget, its API is incompatible with the old version, and notably lacks certain features such as the View Source mode. This plug-in is for whose who heavily rely on the features of CKE4 which are not yet part of CKE5.\u003C\/p\u003E\r\n\u003Cp\u003EIt is generally recommended to upgrade to CKE5 and use the native APEX RTE. If that\u0027s not possible for your business case, you can use this plug-in instead. Officially, CKEditor4 will still be supported by its creators until 2023.\u003C\/p\u003E\r\n\u003Cp\u003EThis plug-in is almost identical to the classic Rich Text Editor of APEX, so it can be a drop-in replacement for APEX 20.2 and above.\u003C\/p\u003E\r\n\u003Cp\u003EThe main differences are:\u003Cp\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003EThe default theme is now the newer \"Moono-Lisa\" which offers a more modern, flat design.\u003C\/li\u003E\r\n\u003Cli\u003EThe library is loaded from the official CKEditor CDN, but you can also host it yourself, and reference the path in a Component Setting.\u003C\/li\u003E\r\n\u003Cli\u003EThe editor\u0027s width is now responsible via CSS, not JavaScript, which removes jittering when resizing.\u003C\/li\u003E\r\n\u003C\/ul\u003E"
+   ,"keywords":[
+        "rte"
+       ,"ckeditor4"
+    ]
+   ,"license":"MIT"
+   ,"commercial":"No"
+   ,"commercially_supported":"Yes"
+   ,"homepage":"https:\/\/github.com\/foex-open-source\/fos-ckeditor4"
+   ,"bugs":{
+        "url":"https:\/\/github.com\/foex-open-source\/fos-ckeditor4\/issues"
+       ,"email":"support@fos.world"
+    }
+   ,"author":{
+        "name":"FOEX GmbH"
+       ,"email":"office@fos.world"
+       ,"url":"https:\/\/foex.at\/fos\/"
+       ,"twitter":"@foexopensource"
+    }
+   ,"repository":{
+        "type":"git"
+       ,"url":"https:\/\/github.com\/foex-open-source\/fos-ckeditor4.git"
+    }
+   ,"oracle":{
+        "versions":[
+            "12.1.0.1"
+           ,"12.2.0.1"
+           ,"18.0.0.0"
+           ,"19.0.0.0"
+        ]
+       ,"apex":{
+            "versions":[
+                "19.2.0"
+               ,"20.1.0"
+               ,"20.2.0"
+            ]
+           ,"plugin":{
+                "internalName":"COM.FOS.CKEDITOR4"
+               ,"type":"item"
+               ,"demo":"https:\/\/fos.world\/ords\/f?p=10000:4010"
+               ,"previewImage":"https:\/\/fos.world\/ords\/fos_master_ws\/fos-image\/COM.FOS.CKEDITOR4"
+            }
+        }
+    }
+}
+
+
