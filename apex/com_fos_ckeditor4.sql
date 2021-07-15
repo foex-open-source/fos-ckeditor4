@@ -34,8 +34,11 @@ prompt APPLICATION 102 - FOS Dev - Plugin Master
 --   Manifest
 --     PLUGIN: 61118001090994374
 --     PLUGIN: 134108205512926532
+--     PLUGIN: 1039471776506160903
 --     PLUGIN: 547902228942303344
---     PLUGIN: 168413046168897010
+--     PLUGIN: 412155278231616931
+--     PLUGIN: 1200087692794692554
+--     PLUGIN: 461352325906078083
 --     PLUGIN: 13235263798301758
 --     PLUGIN: 37441962356114799
 --     PLUGIN: 1846579882179407086
@@ -50,6 +53,8 @@ prompt APPLICATION 102 - FOS Dev - Plugin Master
 --     PLUGIN: 284978227819945411
 --     PLUGIN: 56714461465893111
 --     PLUGIN: 98648032013264649
+--     PLUGIN: 455014954654760331
+--     PLUGIN: 98504124924145200
 --   Manifest End
 --   Version:         19.2.0.00.18
 --   Instance ID:     250144500186934
@@ -158,7 +163,7 @@ wwv_flow_api.create_plugin(
 '',
 '        p_result.is_navigable := true;',
 '    end if;',
-'end;'))
+'end render;'))
 ,p_api_version=>2
 ,p_render_function=>'render'
 ,p_standard_attributes=>'VISIBLE:FORM_ELEMENT:SESSION_STATE:READONLY:SOURCE:ENCRYPT:INIT_JAVASCRIPT_CODE'
@@ -166,8 +171,8 @@ wwv_flow_api.create_plugin(
 ,p_subscribe_plugin_settings=>true
 ,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '<p>This plug-in offers the classic Rich Text Editor functionality we''re all used to in APEX with minor differences such as a newer refreshed theme.</p>',
-'<p>Starting in APEX 20.2, the APEX RTE has been upgraded to CKEditor5, which is a complete rewrite of the widget, its API is incompatible with the old version, and notably lacks certain features such as the View Source mode. This plug-in is for whose'
-||' who heavily rely on the features of CKE4 which are not yet part of CKE5.</p>',
+'<p>Starting in APEX 20.2, the APEX RTE has been upgraded to CKEditor5, which is a complete rewrite of the widget, its API is incompatible with the old version, and notably lacks certain features such as the View Source mode. This plug-in is for those'
+||' who rely heavily on the features of CKE4 which are not yet part of CKE5.</p>',
 '<p>It is generally recommended to upgrade to CKE5 and use the native APEX RTE. If that''s not possible for your business case, you can use this plug-in instead. Officially, CKEditor4 will still be supported by its creators until 2023.</p>',
 '<p>This plug-in is almost identical to the classic Rich Text Editor of APEX, so it can be a drop-in replacement for APEX 20.2 and above.</p>',
 '<p>The main differences are:<p>',
@@ -176,7 +181,7 @@ wwv_flow_api.create_plugin(
 '<li>The library is loaded from the official CKEditor CDN, but you can also host it yourself, and reference the path in a Component Setting.</li>',
 '<li>The editor''s width is now responsible via CSS, not JavaScript, which removes jittering when resizing.</li>',
 '</ul>'))
-,p_version_identifier=>'20.2.0'
+,p_version_identifier=>'21.1.0'
 ,p_about_url=>'https://fos.world'
 ,p_plugin_comment=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '// Settings for the FOS browser extension',

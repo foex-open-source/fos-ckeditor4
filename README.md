@@ -9,7 +9,7 @@ All FOS plug-ins are released under MIT License, which essentially means it is f
 </p>
 <h4>Overview</h4>
 <p>This plug-in offers the classic Rich Text Editor functionality we're all used to in APEX with minor differences such as a newer refreshed theme.</p>
-<p>Starting in APEX 20.2, the APEX RTE has been upgraded to CKEditor5, which is a complete rewrite of the widget, its API is incompatible with the old version, and notably lacks certain features such as the View Source mode. This plug-in is for whose who heavily rely on the features of CKE4 which are not yet part of CKE5.</p>
+<p>Starting in APEX 20.2, the APEX RTE has been upgraded to CKEditor5, which is a complete rewrite of the widget, its API is incompatible with the old version, and notably lacks certain features such as the View Source mode. This plug-in is for those who rely heavily on the features of CKE4 which are not yet part of CKE5.</p>
 <p>It is generally recommended to upgrade to CKE5 and use the native APEX RTE. If that's not possible for your business case, you can use this plug-in instead. Officially, CKEditor4 will still be supported by its creators until 2023.</p>
 <p>This plug-in is almost identical to the classic Rich Text Editor of APEX, so it can be a drop-in replacement for APEX 20.2 and above.</p>
 <p>The main differences are:<p>

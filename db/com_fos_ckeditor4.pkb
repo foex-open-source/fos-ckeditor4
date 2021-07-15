@@ -88,7 +88,7 @@ begin
 
         p_result.is_navigable := true;
     end if;
-end;
+end render;
 
 end;
 /
