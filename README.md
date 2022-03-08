@@ -1,6 +1,6 @@
 ## FOS - CKEditor4
 
-![](https://img.shields.io/badge/Plug--in_Type-Item-orange.svg) ![](https://img.shields.io/badge/APEX-19.2-success.svg) ![](https://img.shields.io/badge/APEX-20.1-success.svg) ![](https://img.shields.io/badge/APEX-20.2-success.svg)
+![](https://img.shields.io/badge/Plug--in_Type-Item-orange.svg) ![](https://img.shields.io/badge/APEX-19.2-success.svg) ![](https://img.shields.io/badge/APEX-20.1-success.svg) ![](https://img.shields.io/badge/APEX-20.2-success.svg) ![](https://img.shields.io/badge/APEX-21.1-success.svg) ![](https://img.shields.io/badge/APEX-21.2-success.svg)
 
 Rich Text Editor based on the classic widget CKEditor4.
 <h4>Free Plug-in under MIT License</h4>
@@ -16,7 +16,7 @@ All FOS plug-ins are released under MIT License, which essentially means it is f
 <ul>
 <li>The default theme is now the newer "Moono-Lisa" which offers a more modern, flat design.</li>
 <li>The library is loaded from the official CKEditor CDN, but you can also host it yourself, and reference the path in a Component Setting.</li>
-<li>The editor's width is now responsible via CSS, not JavaScript, which removes jittering when resizing.</li>
+<li>The editor's width is now responsive via CSS, not JavaScript, which removes jittering when resizing.</li>
 </ul>
 
 ## License
