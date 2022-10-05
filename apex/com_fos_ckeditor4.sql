@@ -100,7 +100,7 @@ wwv_flow_api.create_plugin(
 '  )',
 'as',
 '    c_name     constant apex_plugin.t_input_name := apex_plugin.get_input_name_for_item;',
-'    c_path     constant varchar2(4000)           := nvl(p_plugin.attribute_01, ''https://cdn.ckeditor.com/4.15.1/full-all/'');',
+'    c_path     constant varchar2(4000)           := nvl(p_plugin.attribute_01, ''https://cdn.ckeditor.com/4.19.0/full-all/'');',
 '    c_toolbar  constant varchar2(30)             := nvl(p_item.attribute_01, ''full'');',
 'begin',
 '    if p_param.value_set_by_controller and p_param.is_readonly ',
@@ -185,7 +185,7 @@ wwv_flow_api.create_plugin(
 '<li>The library is loaded from the official CKEditor CDN, but you can also host it yourself, and reference the path in a Component Setting.</li>',
 '<li>The editor''s width is now responsive via CSS, not JavaScript, which removes jittering when resizing.</li>',
 '</ul>'))
-,p_version_identifier=>'21.2.0'
+,p_version_identifier=>'22.1.0'
 ,p_about_url=>'https://fos.world'
 ,p_plugin_comment=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '// Settings for the FOS browser extension',

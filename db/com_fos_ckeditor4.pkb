@@ -21,7 +21,7 @@ procedure render
   )
 as
     c_name     constant apex_plugin.t_input_name := apex_plugin.get_input_name_for_item;
-    c_path     constant varchar2(4000)           := nvl(p_plugin.attribute_01, 'https://cdn.ckeditor.com/4.15.1/full-all/');
+    c_path     constant varchar2(4000)           := nvl(p_plugin.attribute_01, 'https://cdn.ckeditor.com/4.19.0/full-all/');
     c_toolbar  constant varchar2(30)             := nvl(p_item.attribute_01, 'full');
 begin
     if p_param.value_set_by_controller and p_param.is_readonly
